@@ -1,0 +1,59 @@
+@import "reset.less";
+
+.login{
+  width: 100%;
+  height: 100%;
+  position:fixed;
+  top: 80px;
+  left: 0;
+  background-image: url("../images/bg.png");
+  .login-form {
+    width: 500px;
+    height: 450px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translate(0, -50%);
+    padding: 80px 60px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.88);
+    box-shadow: 0 0 15px rgb(0 138 233 / 15%);
+    &__title {
+      font-size: @font-size-two;
+      text-align: center;
+      margin-bottom: 50px;
+      font-family: @font-family-kai;
+      font-weight: bold;
+    }
+    &__button {
+      margin-top: 30px;
+      .flex-between;
+      & button {
+        margin: 0;
+        border-radius: 10px;
+      }
+      &-login {
+        width: 66%;
+      }
+      &-reset {
+        width: 30%;
+      }
+    }
+    &__forget {
+      margin-top: 8px;
+      font-weight: @font-weight-bolder;
+      text-align: right;
+      & a {
+        color: #409eff;
+      }
+    }
+  }
+  // input
+  .el-input__inner {
+    // border: none;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+}

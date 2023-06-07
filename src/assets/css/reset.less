@@ -1,0 +1,82 @@
+@import url('./index.less');
+
+li {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,html {
+  height: 100%;
+  width: 100%;
+  min-width: 400px;
+  color: @font-color-black;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+#app {
+  font-family: @font-family-song;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  
+}
+a {
+  text-decoration: none;
+}
+button {
+  outline: none;
+}
+input {
+  border: none;
+  outline: none;
+
+  // 修改 placeholder 颜色
+  &::-webkit-input-placeholder {
+    color: #BEBEBE;
+  }
+
+  // 去掉 number 输入框上下箭头
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+  &[type="number"]{
+    -moz-appearance: textfield;
+  }
+}
+
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+// 首行缩进
+.two_indent {
+  text-indent: 2em;
+}
+// 文字居中
+.text-center {
+  text-align: center;
+}
+
+
+// 全局类名
+.underline {
+  border-bottom: 1px solid #000;
+}
+.upline {
+  border-top: 1px solid #000;
+}

@@ -1,0 +1,207 @@
+
+// 定义一些常用css变量
+@range-mini: 8px;
+@range-minier: 12px;
+@range-small: 16px;
+@range-smaller: 20px;
+@range-normal: 24px;
+@range-normaler: 28px;
+@range-large: 32px;
+@range-big: 48px;
+@range-larger: 64px;
+@range-super-large: 128px;
+
+@page-background-color: #F3F5FA;
+@background-white: #fff;
+
+@font-color-white: #fff;
+@font-color-normal: #333;
+@font-color-grey: #666;
+@font-color-grey-light: #999;
+@font-color-black: #000;
+@font-color-red: #c0504d;
+
+@font-color-danger: #ff6d57;
+@font-color-primary: #4070F8;
+@font-color-orange: #FDA844;
+
+@font-size-eight: 6.67px;
+@font-size-seven: 7.3px;
+@font-size-six-small: 8.67px;
+@font-size-six: 10px;
+@font-size-five-small: 12px;
+@font-size-five: 14px;
+@font-size-four-small: 16px;
+@font-size-four: 18.67px;
+@font-size-three-small: 20px;
+@font-size-three: 21.3px;
+@font-size-two-small: 24px;
+@font-size-two: 29.3px;
+@font-size-one-small: 32px;
+@font-size-one: 34.67px;
+@font-size-origin-small: 48px;
+@font-size-origin: 56px;
+
+@font-family-black: '黑体';
+@font-family-copy-song: '仿宋';
+@font-family-song: '宋体';
+@font-family-kai: '楷体';
+
+@font-weight-bold: 500;
+@font-weight-bolder: 600;
+
+@border-color: #E6E6E6;
+
+.flex-center {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-start {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.flex-end {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.flex-between {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.flex-column-start {
+  display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+}
+.flex-column-center {
+  display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-column-between {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.page-shadow {
+	box-shadow: 0 4px 32px rgba(0, 0, 0, 0.06);
+}
+
+.text-overflow(@line) when (isnumber(@line)){
+  text-overflow:ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @line;
+  overflow: hidden;
+}
+
+.border-width {
+  border: 2px solid #000;
+}
+
+.border-bottom-width {
+  border-bottom: 2px solid #000;
+}
+
+.border-top-width {
+  border-top: 2px solid #000;
+}
+
+.border-left-width {
+  border-left: 2px solid #000;
+}
+
+.border-right-width {
+  border-right: 2px solid #000;
+}
+
+.border {
+  border: 0.5px solid #000;
+}
+
+.border-bottom {
+  border-bottom: 0.5px solid #000;
+}
+
+.border-top {
+  border-top: 0.5px solid #000;
+}
+
+.border-left {
+  border-left: 0.5px solid #000;
+}
+
+.border-right {
+  border-right: 0.5px solid #000;
+}
+
+.page-title {
+  font-size: @font-size-two-small;
+  font-family: @font-family-song;
+  font-weight: @font-weight-bolder;
+}
+.page-tips {
+  font-family: @font-family-kai;
+  font-size: @font-size-five;
+}
+.table-title {
+  font-size: @font-size-four-small;
+  font-family: @font-family-song;
+  font-weight: @font-weight-bolder;
+}
+.table-title-tips {
+  font-family: @font-family-kai;
+  font-size: @font-size-five;
+  font-weight: normal;
+}
+
+.three-hundred {
+  padding: @range-mini;
+  width: 100%;
+  height: 266px;
+  text-indent: 2em;
+  font-family: @font-family-song;
+  font-size: @font-size-five;
+}
+
+.five-hundred {
+  padding: @range-mini;
+  width: 100%;
+  height: 464px;
+  text-indent: 2em;
+  font-family: @font-family-song;
+  font-size: @font-size-five;
+}
+
+.eight-hundred {
+  padding: @range-mini;
+  width: 100%;
+  height: 800px;
+  text-indent: 2em;
+  font-family: @font-family-song;
+  font-size: @font-size-five;
+}
+
+.ten-hundred {
+  width: 100%;
+  text-indent: 2em;
+  font-family: @font-family-song;
+  font-size: @font-size-five;
+}
